@@ -1,0 +1,33 @@
+.UserStats{
+  margin-top: 10vh;
+  margin-left: 10vh;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.StatsColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.StatHeader{
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.FinalStatsColumn > :not(:first-child){
+  border-right: 1px solid black;
+}
+
+.StatBottomCell{
+  border-bottom: 1px solid black;
+}
+
+.StatCell{
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+
+  padding: 0.3em;
+}

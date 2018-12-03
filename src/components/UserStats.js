@@ -6,32 +6,31 @@ class UserStats extends Component {
     return (
       <div className='UserStats'>
         <div className="StatsColumn">
-          <span></span>
-          <span>Str: </span>
-          <span>Dex: </span>
-          <span>Luk: </span>
-          <span>Watk: </span>
-          <span>Max Range:</span>
-          <span>DPS: </span>
+          <span className='StatCell'>Str: </span>
+          <span className='StatCell'>Dex: </span>
+          <span className='StatCell'>Luk: </span>
+          <span className='StatCell'>Watk: </span>
+          <span className='StatCell'>Max Range:</span>
+          <span className='StatCell StatBottomCell'>DPS: </span>
         </div>
         <div className="StatsColumn">
-          <span>Unbuffed stats (MW only)</span>
-          <span>101</span>
-          <span>102</span>
-          <span>103</span>
-          <span>104</span>
-          <span>105</span>
-          <span>106</span>
+          <span className='StatHeader'>Unbuffed stats <br/>(MW only)</span>
+          <span className='StatCell'>101</span>
+          <span className='StatCell'>102</span>
+          <span className='StatCell'>103</span>
+          <span className='StatCell'>104</span>
+          <span className='StatCell'>105</span>
+          <span className='StatCell StatBottomCell'>106</span>
         </div>
 
-        <div className="StatsColumn">
-          <span>Buffed stats (MW + atk pot)</span>
-          <span>111</span>
-          <span>112</span>
-          <span>113</span>
-          <span>114</span>
-          <span>115</span>
-          <span>116</span>
+        <div className="StatsColumn FinalStatsColumn">
+          <span className='StatHeader'>Buffed stats <br />(MW + atk pot)</span>
+          <span className='StatCell'>111</span>
+          <span className='StatCell'>112</span>
+          <span className='StatCell'>113</span>
+          <span className='StatCell'>114</span>
+          <span className='StatCell'>115</span>
+          <span className='StatCell StatBottomCell'>116</span>
         </div>
         
       </div>
