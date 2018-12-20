@@ -1,0 +1,22 @@
+[
+  {"title": "Helmet", "str": 14, "luk": 16, "dex": 20, "watk": 0, "price": "0"},
+  {"title": "Medal", "str": 2, "luk": 2, "dex": 2, "watk": 0, "price": "0"},
+  {"title": "Eye Accessory", "str": 0, "luk": 0, "dex": 1, "watk": 0, "price": "100m"},
+  {"title": "Face Accessory", "str": 0, "luk": 0, "dex": 8, "watk": 0, "price": "500m"},
+  {"title": "Necklace", "str": 5, "luk": 5, "dex": 5, "watk": 0, "price": "200m"},
+  {"title": "Cape", "str": 0, "luk": 0, "dex": 0, "watk": 10, "price": "2.1b"},
+  {"title": "Top", "str": 0, "luk": 6, "dex": 18, "watk": 0, "price": "40m"},
+  {"title": "Bottom", "str": 0, "luk": 15, "dex": 9, "watk": 0, "price": "80m"},
+  {"title": "Overall", "str": 0, "luk": 0, "dex": 0, "watk": 0, "price": ""},
+  {"title": "Belt", "str": 0, "luk": 0, "dex": 0, "watk": 0, "price": ""},
+  {"title": "Gloves", "str": 0, "luk": 0, "dex": 0, "watk": 12, "price": "220m"},
+  {"title": "Weapon", "str": 0, "luk": 0, "dex": 12, "watk": 80, "price": "2.5b"},
+  {"title": "Shoes", "str": 0, "luk": 0, "dex": 0, "watk": 5, "price": "900m"},
+  {"title": "Ring 1", "str": 2, "luk": 3, "dex": 3, "watk": 0, "price": "0"},
+  {"title": "Ring 2", "str": 1, "luk": 1, "dex": 1, "watk": 0, "price": "0"},
+  {"title": "Ring 3", "str": 1, "luk": 1, "dex": 1, "watk": 0, "price": "0"},
+  {"title": "Ring 4", "str": 0, "luk": 0, "dex": 0, "watk": 0, "price": "0"},
+  {"title": "Throwing Star", "str": 0, "luk": 0, "dex": 0, "watk": 27, "price": "3m per"},
+  {"title": "Consumable", "str": 0, "luk": 0, "dex": 0, "watk": 100, "price": ""},
+  {"title": "Base Stats", "str": 4, "luk": 70, "dex": 0, "watk": 0, "price": ""}
+]
