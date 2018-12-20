@@ -1,0 +1,27 @@
+.UserGear{
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-top: 10vh;
+  margin-left: 10vh;
+}
+
+.RightBorder{
+  border-right: 1px solid black;
+}
+
+.UserGear > :last-child{
+  border-bottom: 1px solid black;
+}
+
+.GearRow{
+  display: grid;
+  grid-template-columns: 30% repeat(5, 14%); 
+}
+
+.GearBox{
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
