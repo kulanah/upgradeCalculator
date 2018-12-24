@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useRef } from 'react';
 import Tab from 'components/Tab';
 
 import WelcomeContent from 'components/tabbedContent/WelcomeContent'
@@ -8,26 +8,36 @@ import FillerContent from 'components/tabbedContent/FillerContent'
 class Tabs extends Component {
   constructor(props) {
     super(props);
-    
-    this.selectedTab = props.selected || 0;
-    this.tabTitles = ['Welcome', 'User Stats', 'Gloves', 'Shoes'];
-    this.tabs = [
-      <Tab text='Welcome' content={<WelcomeContent />} index='0'/>,
-      <Tab text='User Stats' content={<UserContent/>} index='1'/>,
-      <Tab text='Shoes' content={<FillerContent/>} index='2'/>,
-      <Tab text='Gloves' content={<FillerContent/>} index='3'/>,
-    ];
+
+    this.selectTab = this.selectTab.bind(this);
+
+    this.state = {
+      selectedTab : props.selected || 0,
+      tabTitles : ['Welcome', 'User Stats', 'Gloves', 'Shoes'],
+      tabs : [
+        <Tab text='Welcome' index='0' tabClick={this.selectTab} key='1'/>,
+        <Tab text='User Stats' index='1' tabClick={this.selectTab} key='2'/>,
+        <Tab text='Shoes' index='2' tabClick={this.selectTab} key='3'/>,
+        <Tab text='Gloves' index='3' tabClick={this.selectTab} key='4'/>,
+      ],
+      tabsContent: [ <WelcomeContent />, <UserContent />, <FillerContent />, <FillerContent />
+      ]
+    }
   };
+
+  selectTab(index) {
+    this.setState({selectedTab: index});
+  }
 
   render() {
     return (
       <div className='TabsWindow'>
-        {this.tabs.map(tab => {
-          return tab.props.text;
+        {this.state.tabs.map(tab => {
+          return tab;
         })}
 
         <div className="TabbedContent">
-          {this.tabs[this.selectedTab]}
+          {this.state.tabsContent[this.state.selectedTab]}
         </div>
       </div>
     );
