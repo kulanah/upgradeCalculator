@@ -1,0 +1,32 @@
+.TabsWindow{
+  display:flex;
+  flex-direction: column;
+  width: 80vw;
+  border: 1px solid black;
+  margin: 5vh 1vw 5vh 1vw;
+}
+
+.Tabs{
+  display: flex;
+  width: 100%;
+  margin-top: 5vh;
+  margin-left: 10vw;
+}
+
+.Tab{
+  margin-right: 0.5%;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+.TabbedContent{
+  border: 1px solid black;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  position: relative;
+  top: -5px;
+  background: white;
+}

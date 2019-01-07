@@ -5,6 +5,8 @@ import WelcomeContent from 'components/tabbedContent/WelcomeContent'
 import UserContent from 'components/tabbedContent/UserContent'
 import FillerContent from 'components/tabbedContent/FillerContent'
 
+import 'css/Tabs.css';
+
 class Tabs extends Component {
   constructor(props) {
     super(props);
@@ -32,9 +34,11 @@ class Tabs extends Component {
   render() {
     return (
       <div className='TabsWindow'>
-        {this.state.tabs.map(tab => {
-          return tab;
-        })}
+        <div className='Tabs'>
+          {this.state.tabs.map(tab => {
+            return tab;
+          })}
+        </div>
 
         <div className="TabbedContent">
           {this.state.tabsContent[this.state.selectedTab]}
