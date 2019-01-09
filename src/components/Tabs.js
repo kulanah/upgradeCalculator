@@ -69,7 +69,7 @@ class Tabs extends Component {
       <div className='TabsWindow'>
         <div className='Tabs'>
           {this.state.tabs.map(tab => {
-            return <Tab text={tab.text} index={tab.index} tabClick={tab.tabClick} key={tab.key} />
+            return <Tab text={tab.text} index={tab.index} selected={tab.selected} tabClick={tab.tabClick} key={tab.key} />
           })}
         </div>
 

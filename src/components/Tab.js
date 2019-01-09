@@ -13,7 +13,7 @@ class Tab extends Component {
   
   render() {
     return (
-      <span className='Tab' index={this.props.index} onClick={this.selectTab}>
+      <span className={this.props.selected ? 'Tab SelectedTab' : 'Tab'} index={this.props.index} onClick={this.selectTab}>
         {this.props.text}
         
       </span>
