@@ -1,4 +1,4 @@
-import React, { Component, useRef } from 'react';
+import React, { Component } from 'react';
 import Tab from 'components/Tab';
 
 import WelcomeContent from 'components/tabbedContent/WelcomeContent'
