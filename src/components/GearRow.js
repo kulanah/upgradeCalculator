@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 
 class GearRow extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = { ...this.props.stats};
+  }
+  
   render() {
     return (
       <div className='GearRow'>
