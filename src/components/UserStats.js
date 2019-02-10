@@ -1,7 +1,18 @@
 import React, { Component } from 'react';
+import StatEntry from 'components/StatEntry.js';
 
 import 'css/UserStats.css';
 class UserStats extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      str:  4,
+      dex: 110,
+      luk: 400,
+      watk: 110
+    };
+  }
   render() {
     return (
       <div className='UserStats'>
@@ -15,11 +26,11 @@ class UserStats extends Component {
         </div>
         <div className="StatsColumn">
           <span className='StatHeader'>Unbuffed stats <br/>(MW only)</span>
+          <StatEntry value={this.state.str}/>
+          <StatEntry value={this.state.dex}/>
+          <StatEntry value={this.state.luk}/>
+          <StatEntry value={this.state.watk}/>
           <span className='StatCell'>101</span>
-          <span className='StatCell'>102</span>
-          <span className='StatCell'>103</span>
-          <span className='StatCell'>104</span>
-          <span className='StatCell'>105</span>
           <span className='StatCell StatBottomCell'>106</span>
         </div>
 
