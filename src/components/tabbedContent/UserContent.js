@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 
+import UserStats from 'components/UserStats.js'
+import UserGear from 'components/UserGear.js'
+
 class UserContent extends Component {
   render() {
     return (
-      <div>
-        User content!
-
-        User gear and user stats 
+      <div className='UserContent'>
+        <UserStats />
+        <UserGear />
       </div>
     );
   }
