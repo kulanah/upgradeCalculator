@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 
 class GearRow extends Component {
-  constructor(props) {
-    super(props);
-    
-    console.log(props);
-  }
-  
   render() {
     return (
       <div className='GearRow'>
